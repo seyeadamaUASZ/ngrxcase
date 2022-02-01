@@ -1,0 +1,22 @@
+<h3>Create A user</h3>
+<div class="col-md-6">
+    <form>
+        <div>
+            <input type="text" placeholder="Nom" name="Nom" class="form-control" [(ngModel)]="user.nom" />
+        </div>
+        <div>
+            <input type="text" placeholder="PreNom" name="prenom" class="form-control" [(ngModel)]="user.prenom" />
+        </div>
+        <div>
+            <input type="text" placeholder="Email" name="Email" class="form-control" [(ngModel)]="user.email" />
+        </div>
+        <div>
+            <input type="text" placeholder="telephone" name="telephone" class="form-control" [(ngModel)]="user.telephone" />
+        </div>
+        <br>
+
+        <div>
+            <input type="button" class="btn btn-primary" value="Save" (click)="createUser()">
+        </div>
+    </form>
+</div>
